@@ -3091,3 +3091,5 @@ if(NOT SDL2_DISABLE_UNINSTALL)
   endif()
 endif()
 
+##### Fix Objective C builds #####
+set(CMAKE_OBJC_FLAGS "${CMAKE_OBJC_FLAGS} ${CMAKE_C_FLAGS}")
